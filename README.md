@@ -15,12 +15,8 @@ L'interface est conçue pour être intuitive et moderne, offrant une expérience
 
 ## Capture d'écran
 
-![Capture d'écran de l'application](./assets/images/Screenshot.png)
+## Capture d'écran
 
-## Installation
+<img src="./assets/images/Screenshot.png" alt="Capture d'écran de l'application" width="400"/>
 
-1. Clonez ce dépôt dans votre environnement local :
 
-   ```bash
-   git clone <URL_DU_DEPOT>
-   cd react-native-wallet
