@@ -15,8 +15,6 @@ L'interface est conçue pour être intuitive et moderne, offrant une expérience
 
 ## Capture d'écran
 
-## Capture d'écran
-
 <img src="./assets/images/Screenshot.png" alt="Capture d'écran de l'application" width="400"/>
 
 
