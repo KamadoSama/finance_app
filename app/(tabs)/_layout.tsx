@@ -2,11 +2,11 @@ import { Tabs } from 'expo-router';
 import React from 'react';
 import { Platform } from 'react-native';
 
-import { HapticTab } from '@/components/HapticTab';
-import { IconSymbol } from '@/components/ui/IconSymbol';
-import TabBarBackground from '@/components/ui/TabBarBackground';
+import { ButtonBottomTab } from '@/components/ButtonBottomTab';
+
 import { Colors } from '@/constants/Colors';
 import { useColorScheme } from '@/hooks/useColorScheme';
+import { Iconify } from 'react-native-iconify';
 
 export default function TabLayout() {
   const colorScheme = useColorScheme();
@@ -14,30 +14,54 @@ export default function TabLayout() {
   return (
     <Tabs
       screenOptions={{
-        tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
+        tabBarActiveTintColor: Colors.light,
         headerShown: false,
-        tabBarButton: HapticTab,
-        tabBarBackground: TabBarBackground,
-        tabBarStyle: Platform.select({
-          ios: {
-            // Use a transparent background on iOS to show the blur effect
-            position: 'absolute',
-          },
-          default: {},
-        }),
+        // tabBarButton: HapticTab,
+    
+        tabBarIconStyle: {
+          width: 30,
+          height: 30,
+          alignContent: 'center',
+          justifyContent: 'center',
+          alignItems: 'center',
+        },
+        tabBarStyle: {
+          // Use a transparent background on iOS to show the blur effect
+          position: 'absolute',
+          height: 70,
+          flexDirection: 'row',
+          alignItems: 'center',
+          justifyContent: 'center',
+          bottom: 0,
+          // paddingTop: 10,
+        },
       }}>
       <Tabs.Screen
         name="index"
         options={{
-          title: 'Home',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="house.fill" color={color} />,
+          title: '',
+          tabBarIcon: ({ color, focused }) => <ButtonBottomTab focused={focused} ><Iconify size={28} icon='eva:home-fill' color={color} /></ButtonBottomTab>,
         }}
       />
       <Tabs.Screen
-        name="explore"
+        name="wallet"
         options={{
-          title: 'Explore',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="paperplane.fill" color={color} />,
+          title: '',
+          tabBarIcon: ({ color, focused }) =><ButtonBottomTab focused={focused} > <Iconify size={28} icon='ph:wallet' color={color} /></ButtonBottomTab>,
+        }}
+      />
+      <Tabs.Screen
+        name="card"
+        options={{
+          title: '',
+          tabBarIcon: ({ color,focused }) => <ButtonBottomTab focused={focused} ><Iconify size={28} icon='lets-icons:credit-card-light' color={color} /></ButtonBottomTab>,
+        }}
+      />
+      <Tabs.Screen
+        name="profil"
+        options={{
+          title: '',
+          tabBarIcon: ({ color, focused }) => <ButtonBottomTab focused={focused} ><Iconify size={28} icon='pepicons-pencil:person' color={color} /></ButtonBottomTab>,
         }}
       />
     </Tabs>
