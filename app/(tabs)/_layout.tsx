@@ -1,7 +1,5 @@
 import { Tabs } from 'expo-router';
 import React from 'react';
-import { Platform } from 'react-native';
-
 import { ButtonBottomTab } from '@/components/ButtonBottomTab';
 
 import { Colors } from '@/constants/Colors';
@@ -17,7 +15,6 @@ export default function TabLayout() {
         tabBarActiveTintColor: Colors.light,
         headerShown: false,
         // tabBarButton: HapticTab,
-    
         tabBarIconStyle: {
           width: 30,
           height: 30,
