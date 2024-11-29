@@ -2,19 +2,17 @@
 
 ## Description
 
-Cette application mobile est une solution de gestion de portefeuille qui permet aux utilisateurs de visualiser leur solde disponible, d'effectuer des transactions (retrait, transfert, dépôt) et d'accéder rapidement à divers services de paiement tels qu'électricité, internet, santé, et plus encore.
+This mobile application is a wallet management solution that allows users to view their available balance, perform transactions (withdrawal, transfer, deposit), and quickly access various payment services such as electricity, internet, health, and more.
 
-L'interface est conçue pour être intuitive et moderne, offrant une expérience utilisateur agréable et simple.
+The interface is designed to be intuitive and modern, providing a smooth and user-friendly experience.
 
-## Fonctionnalités
+## Features
 
-- **Affichage du solde disponible** : Consultez le montant actuel de votre portefeuille.
-- **Gestion des transactions** : Effectuez des retraits, transferts et dépôts directement depuis l'application.
-- **Liste des paiements** : Accédez rapidement aux options de paiement courantes comme l'électricité, internet, santé, et autres.
-- **Navigation intuitive** : Navigation facile entre les différentes sections via une barre de navigation inférieure.
+- **Available Balance Display**: Check your current wallet balance.
+- **Transaction Management**: Perform withdrawals, transfers, and deposits directly within the app.
+- **Payment List**: Quickly access common payment options such as electricity, internet, health, and more.
+- **Intuitive Navigation**: Easily navigate between sections using a bottom navigation bar.
 
-## Capture d'écran
+## Screenshot
 
-<img src="./assets/images/Screenshot.png" alt="Capture d'écran de l'application" width="400"/>
-
-
+<img src="./assets/images/Screenshot.png" alt="App Screenshot" width="400"/>
